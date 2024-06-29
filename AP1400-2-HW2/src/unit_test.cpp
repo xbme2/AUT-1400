@@ -4,7 +4,6 @@
 #include "server.h"
 #include "client.h"
 
-/*
 TEST(HW1Test, TEST1) {
     Server server{};
     auto bryan{server.add_client("bryan")};
@@ -33,6 +32,7 @@ TEST(HW1Test, TEST4) {
     EXPECT_NE(bryan1->get_id(), bryan3->get_id());
     EXPECT_NE(bryan2->get_id(), bryan3->get_id());
 }
+
 
 TEST(HW1Test, TEST5) {
     Server server{};
@@ -116,6 +116,7 @@ TEST(HW1Test, TEST14) {
     EXPECT_TRUE(sarah->transfer_money("bryan", 0.5));
 
     std::cout  <<  std::string(20, '*') <<  std::endl;
+    std::cout<<pending_trxs.size()<<std::endl;
     for(const  auto& trx : pending_trxs)
         std::cout << trx <<  std::endl;
     std::cout  <<  std::string(20, '*') <<  std::endl;
@@ -146,7 +147,7 @@ TEST(HW1Test, TEST15) {
     EXPECT_TRUE(clint->get_wallet()==3.5 ||clint->get_wallet()==3.5 ||clint->get_wallet()==9.75);
     EXPECT_TRUE(sarah->get_wallet()==13.25 || sarah->get_wallet()==7 || sarah->get_wallet()==7);
 }
-*/
+
 
 
 
